@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub Arcade - Free Online Games</title>
+    <meta name="description" content="Play free online games: Tic Tac Toe, Snake, Pong, Connect 4. Features single player bots and 2-player modes. Fast, responsive, and no downloads.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- App Container -->
+    <div id="app">
+        
+        <!-- Header -->
+        <header>
+            <div class="logo" onclick="app.router.go('')">
+                <i class="fas fa-gamepad"></i> GameHub
+            </div>
+            <nav>
+                <a href="#" onclick="app.router.go(''); return false;">Home</a>
+                <a href="#strategy" onclick="return false;">Strategy</a>
+                <a href="#arcade" onclick="return false;">Arcade</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Views injected here by JS -->
+        </main>
+
+    </div>
+
+    <!-- SEO Hidden Content (For Crawlers) -->
+    <article id="seo-content" style="display:none;">
+        <h1>Play Free Browser Games Online</h1>
+        <p>Welcome to the fastest loading game hub. We offer strategy games like Tic Tac Toe and Connect 4 with advanced AI bots.</p>
+        <!-- More text injected dynamically -->
+    </article>
+
+    <!-- Scripts -->
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+</body>
+  </html>
